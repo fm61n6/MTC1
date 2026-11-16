@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <h2>MTC</h2>
+        <button id="menuBtn">☰</button>
+        <ul id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our institution.</p>
+    </section>
+
+    <section class="container">
+        <form id="contactForm">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName">
+
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail">
+
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject">
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="6"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="contactMessageBox"></p>
+    </section>
+
+    <section class="container">
+        <div class="stat-card">
+            <h3>Contact Details</h3>
+            <p>Address: Nairobi, Kenya</p>
+            <p>Phone: 0700 000 000</p>
+            <p>Email: info@example.com</p>
+            <p>Opening Hours: Monday - Friday</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="stat-card">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>MTC</h3>
+    <p>&copy; 2026 MTC</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>MTC</h2>
+        <button id="menuBtn">☰</button>
+        <ul id="navLinks">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Student Management System</h1>
+        <p>Register, manage and monitor student performance.</p>
+        <a href="#registration" class="btn">Register Student</a>
+    </section>
+
+    <section class="container">
+        <h2>Dashboard</h2>
+        <div class="stats">
+            <div class="stat-card"><h3>Total Students</h3><p id="totalStudents">0</p></div>
+            <div class="stat-card"><h3>Passed</h3><p id="passedStudents">0</p></div>
+            <div class="stat-card"><h3>Failed</h3><p id="failedStudents">0</p></div>
+            <div class="stat-card"><h3>Average Marks</h3><p id="averageMarks">0</p></div>
+        </div>
+    </section>
+
+    <section class="container" id="registration">
+        <h2>Register Student</h2>
+        <form id="studentForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name">
+
+            <label for="age">Age</label>
+            <input type="number" id="age">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label for="course">Course</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option>Software Development</option>
+                <option>Web Design</option>
+                <option>Data Analysis</option>
+                <option>Cyber Security</option>
+                <option>Networking</option>
+                <option>Graphic Design</option>
+            </select>
+
+            <label for="marks">Marks</label>
+            <input type="number" id="marks" min="0" max="100">
+
+            <button type="submit" class="btn">Register Student</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <section class="container">
+        <h2>Search Students</h2>
+        <input type="text" id="searchInput" placeholder="Search student by name...">
+    </section>
+
+    <section class="container">
+        <h2>Performance Summary</h2>
+        <div class="performance-summary">
+            <div><span class="performance-badge excellent">Excellent</span><span>80 - 100 marks</span></div>
+            <div><span class="performance-badge very-good">Very Good</span><span>70 - 79 marks</span></div>
+            <div><span class="performance-badge good">Good</span><span>60 - 69 marks</span></div>
+            <div><span class="performance-badge average">Average</span><span>50 - 59 marks</span></div>
+            <div><span class="performance-badge failed">Failed</span><span>0 - 49 marks</span></div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Student Records</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Age</th><th>Gender</th><th>Course</th>
+                        <th>Marks</th><th>Performance</th><th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>MTC</h3>
+    <p>Interactive Student Management Website</p>
+    <p>&copy; 2026 MTC</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
